@@ -1,0 +1,28 @@
+.main-navigation___title {
+    position: relative;
+    text-align: center;
+    /* Bold 19 (0.4 px) */
+    display:block;
+    margin-top: 3rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 24px;
+    /* identical to box height */
+
+    letter-spacing: 0.4px;
+    /* sidebar / gray */
+
+    color: #A4A6B3;
+    opacity: 0.7;
+
+
+}
+
+
+
+.main-navigation__sidebar-nav {
+    display: none;
+    margin-right: 2rem;
+    
+}

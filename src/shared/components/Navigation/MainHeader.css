@@ -1,0 +1,15 @@
+.main-header {
+    /* sidebar / desktop */
+    position: relative;
+    width: 34em;
+    height: 100%;
+
+    /* sidebar / bg */
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: #252733;
+}

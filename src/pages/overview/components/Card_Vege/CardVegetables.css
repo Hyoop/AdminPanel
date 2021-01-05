@@ -1,0 +1,46 @@
+.main__cardvegetables{
+    position: relative;
+    display: flex;
+    flex-flow:column wrap;
+    flex-direction: row;
+    width: 250px;
+    height: 200px;
+    border: 1px solid #DFE0EB;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.main__card_flex-column{
+    flex-direction: column;
+}
+
+.main__cardName{
+    padding: 1em;
+    flex: 1 1 auto;
+    width: 200px;
+    height:30%;
+
+}
+.main__cardIMG{
+    display: inline-block; 
+    overflow: hidden;
+    margin-left: 1em;
+}
+.main__cardIMG img {
+    display: block; /* no whitespace */
+    
+    width: 180px;
+    height: 120px;
+  }
+.main__cardIMG img {
+    transform: scale(2) translate(0, 20px);
+  }
+.main__cardSVG{
+    width: 100%;
+    flex: 1 1 auto;
+    height: 50%;
+    margin-left: 1em;
+    padding: 1em;
+    padding-top: 0%;
+
+
+}

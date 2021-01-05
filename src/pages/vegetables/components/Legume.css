@@ -1,0 +1,51 @@
+.legume {
+    position: relative;
+    margin:auto;
+    margin-top: 1em;
+    margin-left: 50%;
+    
+    top: 100px;
+    width: 8rem;
+    height: 6rem;
+    padding: 1rem;
+    /* grayscale / white */
+    background: #FFFFFF;
+    /* grayscale / divider */
+
+    border: 1px solid #DFE0EB;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.legume__name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    /* grayscale / black */
+
+    color: #252733;
+}
+
+.legume__meta {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 0px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    /* grayscale / gray */
+
+    color: #9FA2B4;
+}
+.legume__image {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #3b0062;
+}

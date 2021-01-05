@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #F7F8FC;
+  position: absolute;
+}
+
+.main {
+  position: fixed;
+  width: calc(100% - 255px);
+  height: 100%;
+  left: 255px;
+  overflow: hidden visible;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+.main {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

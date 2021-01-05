@@ -1,0 +1,12 @@
+.main-sidebar{
+    height: 100%;
+    width: 255px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    
+    /* sidebar / bg */
+
+    background-color: #363740; /* REMOVE */
+    overflow-x: hidden;
+}
