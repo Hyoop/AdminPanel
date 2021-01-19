@@ -8,13 +8,12 @@ const cardvegetables = props => (
         <div class="main__card_flex-column">
             <div className="main__cardName"> {props.name}</div>
             <div className="main__cardIMG">
-                <img  src={`http://localhost:8080/${props.image}`}/>
+                <img  src={`http://ec2-15-237-49-138.eu-west-3.compute.amazonaws.com:8080/${props.image}`}/>
             </div>
         </div>
         <div class="main__card_flex-row">
-            <Button />
+            
         </div>
-        
     </div>
 );
 

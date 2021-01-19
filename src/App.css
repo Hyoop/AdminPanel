@@ -20,3 +20,9 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.overlay{
+  height: inherit;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}

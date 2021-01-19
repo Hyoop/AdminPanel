@@ -4,7 +4,7 @@ import MainHeader from '../../shared/components/Navigation/MainHeader';
 
 import Card from './components/Card/Card';
 import WeeksVegetables from './components/WeeksVegetables/WeeksVegetables';
-
+import CardAddForm from'./components/Card_Vege/CardAddForm';
 class Overview extends Component {
     state = {
         NbSubscriptions: 0,
@@ -13,7 +13,12 @@ class Overview extends Component {
         Nbmembers: 0,
         Vegetablesoftheweek:[],
         overviewLoading: true,
+        showForm: false,
     }
+    handleAddVegetables() { 
+        this.setState((state)=> {return {showForm : !this.state.showForm}});
+    }
+
     render(){
         return (
         <div className="overview">
@@ -29,13 +34,14 @@ class Overview extends Component {
                 <Card title="Recipes" content={this.state.NbRecipes}/>
             </section>
             <section className="overview-weeks_vegetables">
-                <WeeksVegetables />
+                <WeeksVegetables myClick={this.handleAddVegetables.bind(this)}/>
             </section>
             <section className="overview-task">
                 <div>2.</div>
             </section>
-
-            
+            {this.state.showForm && 
+                <CardAddForm text="ADD A VEGETABLE" closePopup={this.handleAddVegetables.bind(this)}/>
+            }
         </div>)
         }
 }
