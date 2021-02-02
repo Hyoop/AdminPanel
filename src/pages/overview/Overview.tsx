@@ -34,7 +34,7 @@ class Overview extends Component {
                 <Card title="Recipes" content={this.state.NbRecipes}/>
             </section>
             <section className="overview-weeks_vegetables">
-                <WeeksVegetables myClick={this.handleAddVegetables.bind(this)}/>
+                <WeeksVegetables showForm={this.state.showForm} myClick={this.handleAddVegetables.bind(this)}/>
             </section>
             <section className="overview-task">
                 <div>2.</div>
@@ -43,7 +43,7 @@ class Overview extends Component {
                 <CardAddForm text="ADD A VEGETABLE" closePopup={this.handleAddVegetables.bind(this)}/>
             }
         </div>)
-        }
+    }
 }
 
 export default Overview;

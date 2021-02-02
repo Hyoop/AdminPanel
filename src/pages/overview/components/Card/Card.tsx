@@ -2,7 +2,9 @@ import React from 'react';
 
 import './Card.css';
 
-const card = props => (
+const card = (props:{
+    title: string,
+    content: number }) => (
     <article className="card">
         <header className="card_header">
             <h3 className="card__meta">

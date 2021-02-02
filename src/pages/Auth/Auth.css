@@ -1,17 +1,16 @@
 .auth-form {
-    position: relative;
-    top: 10em;
-    width: 50%;
-    margin: auto;
-    padding: 3rem;
-    border: 1px solid #3b0062;
-    border-radius: 5px;
-    background-color: white;
+  position: relative;
+  top: 10em;
+  width: 50%;
+  margin: auto;
+  padding: 3rem;
+  border: 1px solid #3b0062;
+  border-radius: 5px;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .auth-form {
+    width: 40rem;
   }
-  
-  @media (min-width: 768px) {
-    .auth-form {
-      width: 40rem;
-    }
-  }
-  
+}
