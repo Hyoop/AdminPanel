@@ -1,0 +1,63 @@
+.recipe {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20px 30px;
+  /* grayscale / white */
+  background: #ffffff;
+  /* grayscale / divider */
+
+  border-top: 1px solid #dfe0eb;
+  border-bottom: 1px solid #dfe0eb;
+
+  /* Shadow */
+}
+.recipe__buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+
+.recipe__like-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.recipe__like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  background: url("../../../shared/components/UIElements/iconmonstr-heart-thin.svg");
+  width: 60px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+}
+.recipe__info {
+  float: left;
+  height: 100%;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+.recipe__text {
+  height: 100%;
+  width: 327px;
+  padding-top: 1px;
+  margin-right: 60px;
+}
+
+.recipe__text h1 {
+  margin: 0 0 0 38px;
+  font-size: 20px;
+  color: #474747;
+}
+.recipe__image {
+  margin-right: 0px;
+}
+.recipe__image img {
+  border-radius: 5px;
+  height: auto;
+}

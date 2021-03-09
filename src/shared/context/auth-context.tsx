@@ -5,7 +5,7 @@ interface AuthContextInterface {
   isLoggedIn: Boolean,
   userId: mongodb.ObjectId | null,
   token: String | null,
-  login: (uid:any, token:any) => void,
+  login: (uid:any, token:any, expiration:any) => void,
   logout: () => void,
 }
 

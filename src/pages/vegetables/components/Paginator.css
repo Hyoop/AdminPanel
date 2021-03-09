@@ -1,9 +1,9 @@
-.paginator{
+.paginatorvege {
+  position: relative;
+  display: grid;
+  grid-column-gap: 0em;
+  grid-row-gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(12em, auto));
 
-    display:grid;
-    grid-template-columns: 200px 200px 200px;
-    margin:auto;
-    margin-left: 255px;
-    overflow: auto;
-
+  width: 51em;
 }

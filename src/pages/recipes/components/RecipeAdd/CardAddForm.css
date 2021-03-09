@@ -1,0 +1,10 @@
+.popup {
+  z-index: 3;
+
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.popup::-webkit-scrollbar {
+  display: none;
+}

@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import env from "react-dotenv";
 import "./WeeksVegetables.css";
 import CardVegetables from "../Card_Vege/CardVegetables";
 import CardAdd from "../Card_Vege/CardAdd";
 import { useHttpClient } from "../../../../shared/hooks/http-hook";
+import { AuthContext } from "../../../../shared/context/auth-context";
 
 const WeeksVegetables = (props: {
   showForm: boolean,
   myClick: () => void
 }) => 
 {
+  const auth = useContext(AuthContext);
   const [vegetables, setvegetables] = useState([]);
 
   const { isLoading, sendRequest } = useHttpClient();
@@ -20,7 +22,13 @@ const WeeksVegetables = (props: {
     const fetchVegetables = async () => {
       try {
         const responseData = await sendRequest(
-          "" + env.apiURL + "/api/panier/week/"
+          "" + env.apiURL + "/api/panier/week/",
+          "GET",
+          null,
+          {
+            "Content-Type" : "application/json",
+            Authorization: "Bearer " + auth.token
+          }
         );
         setvegetables(responseData.vegetables);
       } catch (err) {}

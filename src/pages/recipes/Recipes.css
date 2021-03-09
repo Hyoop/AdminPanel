@@ -1,0 +1,27 @@
+.recipes {
+  overflow: hidden;
+}
+
+.recipes__header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.recipes__feed {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-row-gap: 1em;
+  justify-content: center;
+}
+.recipe__info {
+  float: left;
+  background-color: #ffffff;
+}

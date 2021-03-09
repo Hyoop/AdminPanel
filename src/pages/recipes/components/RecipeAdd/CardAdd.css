@@ -1,0 +1,20 @@
+.recipeCardAdd {
+  position: relative;
+
+  padding-left: 1em;
+  width: 51em;
+  height: 100%;
+  height: auto;
+  border: 1px solid #dfe0eb;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+}
+
+.recipe__Button {
+  width: 100%;
+  padding: 33% 0%;
+  text-align: center;
+  justify-content: center;
+}

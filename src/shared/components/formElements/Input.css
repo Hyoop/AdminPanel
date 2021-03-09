@@ -1,16 +1,18 @@
 .form-control {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .form-control label,
 .form-control input,
 .form-control textarea {
   display: block;
+  height: 25px;
+  padding: 0px 20px;
 }
 
 .form-control label {
   text-transform: uppercase;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem;
   font-size: small;
 }
 

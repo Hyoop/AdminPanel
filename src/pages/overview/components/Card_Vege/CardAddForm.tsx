@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import env from "react-dotenv";
 import Input from "../../../../shared/components/formElements/Input";
 import { VALIDATOR_REQUIRE } from "../../../../shared/utils/validators";
@@ -8,11 +8,13 @@ import Button from "../../../../shared/components/formElements/Button";
 import { useHttpClient } from "../../../../shared/hooks/http-hook";
 
 import { useForm } from "../../../../shared/hooks/form-hook";
+import { AuthContext } from "../../../../shared/context/auth-context";
 
 const CardAddForm = (props : {
   text: string,
   closePopup: () => void
 }) => {
+  const auth = useContext(AuthContext)
   const { sendRequest } = useHttpClient();
   const [formState, inputHandler] = useForm({
     VegetableName: {
@@ -41,7 +43,7 @@ const CardAddForm = (props : {
     formData.append("quantity", formState.inputs.quantity.value);
     formData.append("oftheweek", formState.inputs.oftheweek.value);
     formData.append("image", formState.inputs.image.value);
-    await sendRequest("" + env.apiURL + "/api/panier/", "POST", formData);
+    await sendRequest("" + env.apiURL + "/api/panier/", "POST", formData, {Authorization: 'Bearer ' + auth.token});
     props.closePopup();
   };
 
