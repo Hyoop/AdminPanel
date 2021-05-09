@@ -1,25 +1,25 @@
 .main-footer {
-    position: relative;
-    color: white;
+  position: relative;
+  color: white;
 
-    padding-top: 3em;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+  padding-top: 3em;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-.footer__container{
-    position: relative;
-    padding-left: 1em;
+.footer__container {
+  position: relative;
+  padding-left: 1em;
 
-    width:51em;
-    height: 100%;
+  width: 51rem;
+  height: 100%;
 
-    /* white */
-    background: #363740;
-    /*  divider */
-    border: 1px solid #DFE0EB;
-    box-sizing: border-box;
-    border-radius: 8px;
+  /* white */
+  background: #363740;
+  /*  divider */
+  border: 1px solid #dfe0eb;
+  box-sizing: border-box;
+  border-radius: 8px;
 }

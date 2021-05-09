@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./MainSidebar.css";
 
 const MainSidebar = (props: { children: any }) => {

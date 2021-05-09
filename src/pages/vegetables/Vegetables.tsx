@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from "react";
+import {useState, useEffect, useContext} from "react";
 import "./Vegetables.css";
 import Legume from "./components/Legume";
 import Paginator from "./components/Paginator";
@@ -22,8 +22,10 @@ const Vegetables = ()=>{
               "GET",
           null,
           {
+            "Accept": 'application/json',
             "Content-Type" : "application/json",
-            Authorization: "Bearer " + auth.token
+            "credentials": "same-origin",
+            "Authorization": "Bearer " + auth.token
           }
             );
             setVegetables(responseData.vegetables);
@@ -35,27 +37,31 @@ const Vegetables = ()=>{
 
     return (
         <div className= "vegetables">
+
         <section className="vegetables__header">
           <MainHeader>
             <h1>Vegetables</h1>
           </MainHeader>
         </section>
+
         <section className="feedvege">
           {isLoading && (
             <div style={{ textAlign: "center", marginTop: "2rem" }}>
               <Loader />
             </div>
           )}
+
           {vegetables.length <= 0 && !isLoading ? (
             <p style={{ textAlign: "center" }}>No vegetables found.</p>
           ) : null}
+
           {!isLoading && (
             <Paginator>
               {vegetables.map((legume:any) => (
-                <Legume key={legume._id} name={legume.name} /> // add id={legume._id} 
-              ))}
-            </Paginator>
+                <Legume key={legume._id} name={legume.name} image={legume.imageUrl}/> // add id={legume._id} 
+              ))}</Paginator>
           )}
+          
         </section>
       </div>
     )

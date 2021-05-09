@@ -1,4 +1,4 @@
-import React from "react";
+
 import { NavLink } from "react-router-dom";
 
 import "./NavLinks.css";
@@ -7,7 +7,7 @@ const NavLinks = () => {
   return (
     <ul className="nav-links">
       <li>
-        <NavLink to="/" exact className="nav-links__title">
+        <NavLink to="/" exact>
           <span>
             <svg
               width="16"
@@ -29,11 +29,11 @@ const NavLinks = () => {
               </defs>
             </svg>
           </span>
-          <span>Overview</span>
+          <div>Overview</div>
         </NavLink>
       </li>
       <li>
-        <NavLink to="/subscription" className="nav-links__title">
+        <NavLink to="/subscription">
           <span>
             <svg
               width="16"
@@ -48,11 +48,11 @@ const NavLinks = () => {
               />
             </svg>
           </span>
-          <span>Subscription</span>
+          <div>Subscription</div>
         </NavLink>
       </li>
       <li>
-        <NavLink to="/vegetables" className="nav-links__title">
+        <NavLink to="/vegetables">
           <span>
             <svg
               width="16"
@@ -67,12 +67,12 @@ const NavLinks = () => {
               />
             </svg>
           </span>
-          <span>Vegetables</span>
+          <div>Vegetables</div>
         </NavLink>
       </li>
 
       <li>
-        <NavLink to="/recipes" className="nav-links__title">
+        <NavLink to="/recipes">
           <span>
             <svg
               width="16"
@@ -87,12 +87,12 @@ const NavLinks = () => {
               />
             </svg>
           </span>
-          <span>Recipes</span>
+          <div>Recipes</div>
         </NavLink>
       </li>
 
       <li>
-        <NavLink to="/settings" className="nav-links__title">
+        <NavLink to="/settings">
           <span>
             <svg
               width="16"
@@ -107,7 +107,7 @@ const NavLinks = () => {
               />
             </svg>
           </span>
-          <span>Settings</span>
+          <div>Settings</div>
         </NavLink>
       </li>
     </ul>

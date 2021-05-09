@@ -1,12 +1,12 @@
-.main-sidebar{
-    height: 100%;
-    width: 255px;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    
-    /* sidebar / bg */
+.main-sidebar {
+  height: 100%;
+  width: 16rem;
+  position: fixed;
+  left: 0px;
+  top: 0px;
 
-    background-color: #363740; /* REMOVE */
-    overflow-x: hidden;
+  /* sidebar / bg */
+
+  background-color: #ffffff;
+  overflow-x: hidden;
 }

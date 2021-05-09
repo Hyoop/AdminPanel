@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import env from "react-dotenv";
 import "./WeeksVegetables.css";
 import CardVegetables from "../Card_Vege/CardVegetables";
@@ -15,7 +15,7 @@ const WeeksVegetables = (props: {
   const [vegetables, setvegetables] = useState([]);
 
   const { isLoading, sendRequest } = useHttpClient();
-  const [value, setValue] = useState(props.showForm);
+  const [value, setValue] = useState<boolean>(props.showForm);
 
   useEffect(() => {
     setValue(props.showForm)
@@ -56,10 +56,10 @@ const WeeksVegetables = (props: {
               key={vegetable._id}
               name={vegetable.name}
               image={vegetable.imageUrl}
-              alt={vegetable.name}
+              
             />
           ))}
-        <CardAdd myClick={props.myClick} />
+         <CardAdd myClick={props.myClick} />
       </div>
     </div>
   );

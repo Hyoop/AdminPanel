@@ -1,18 +1,16 @@
-.main__CardAdd{
-    position: relative;
-    
-    width: 250px;
-    height: 200px;
-    border: 1px solid #DFE0EB;
-    box-sizing: border-box;
-    border-radius: 8px;
+.main__CardAdd {
+  position: relative;
+
+  width: 12rem;
+  height: 9rem;
+  border: 1px solid #dfe0eb;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .main__Button {
-    width:100%;
-    padding: 33% 0%;
-    text-align: center;
-    justify-content: center;
-   
-
+  width: 100%;
+  padding: 33% 0%;
+  text-align: center;
+  justify-content: center;
 }

@@ -1,14 +1,16 @@
-import React from "react";
-
+import {useEffect} from "react";
+import env from "react-dotenv";
 import "./Legume.css";
 
-const legume = (props: { name: String }) => (
-  <article className="legume">
-    <header className="legume__header">
-      <h3 className="legume__meta">Vegetable:</h3>
-      <h1 className="legume__name">{props.name}</h1>
-    </header>
-  </article>
-);
+const Legume = (props: { name: String, image: any}) => {
+  
+  useEffect(()=>{})
 
-export default legume;
+  return (
+    <article className="legume" style={{backgroundImage: `url(${env.apiURL}/${props.image})`}}>
+      <h1 className="legume__name">{props.name}</h1>
+    </article>
+  )
+};
+
+export default Legume;

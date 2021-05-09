@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from "react";
+import {useState, useEffect, useContext} from "react";
 import "./Recipes.css";
 import Recipe from "./components/Recipe";
 import Paginator from "./components/Paginator";

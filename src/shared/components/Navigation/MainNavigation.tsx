@@ -1,5 +1,4 @@
-import React from "react";
-import StyledLink from "../Link";
+import { Link } from "react-router-dom";
 import "./MainNavigation.css";
 
 import MainSidebar from "./MainSidebar";
@@ -9,9 +8,9 @@ const MainNavigation = () => {
   return (
     <MainSidebar>
       <h1>
-        <StyledLink to="/" className="main-navigation___title">
+        <Link to="/" className="main-navigation___title">
           Admin Panel
-        </StyledLink>
+        </Link>
       </h1>
       <nav>
         <NavLinks />

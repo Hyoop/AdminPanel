@@ -8,6 +8,15 @@ export const inputReducer = (state:any, action:any) => {
         value: action.value,
         isValid: true,
       };
+    case "CHANGEARRAY":
+      console.log(state.value)
+      let value = state.value;
+      value[state.index] = action.value; 
+      return {
+        ...state,
+        value: value,
+        isValid: true,
+      };
     case "TOUCH": {
       return {
         ...state,
@@ -19,8 +28,9 @@ export const inputReducer = (state:any, action:any) => {
   }
 };
 
-export const useInput = (initialValue: any, initialFormValidity: boolean) => {
+export const useInput = (initialValue: any, initialFormValidity: boolean, index: number) => {
   const [inputState, dispatch] = useReducer(inputReducer, {
+    index: index || 0,
     value: initialValue,
     isTouched: false,
     isValid: initialFormValidity || false,
@@ -31,11 +41,18 @@ export const useInput = (initialValue: any, initialFormValidity: boolean) => {
       value: event.target.value,
     });
   };
+  const changeArrayHandler = (event:any) => {
+    dispatch({
+      type: "CHANGEARRAY",
+      value: event.target.value,
+    });
+  };
+
   const touchHandler = () => {
     dispatch({
       type: "TOUCH",
     });
   };
 
-  return [inputState, changeHandler, touchHandler];
+  return [inputState, changeHandler, touchHandler, changeArrayHandler];
 };

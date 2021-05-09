@@ -12,6 +12,8 @@
   border: 1px solid #dfe0eb;
   box-sizing: border-box;
   border-radius: 8px;
+
+  background-size: cover;
 }
 
 .legume__name {
@@ -24,25 +26,6 @@
 
   /* grayscale / black */
 
-  color: #252733;
-}
-
-.legume__meta {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 0px;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: 0.4px;
-
-  /* grayscale / gray */
-
-  color: #9fa2b4;
-}
-.legume__image {
-  font-size: 1.5rem;
-  margin: 1rem 0;
-  color: #3b0062;
+  color: white;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem black;
 }

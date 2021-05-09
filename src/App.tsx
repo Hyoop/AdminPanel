@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import mongodb from "mongodb";
 import "./App.css";
@@ -6,6 +6,7 @@ import MainNavigation from "./shared/components/Navigation/MainNavigation";
 import Overview from "./pages/overview/Overview";
 import Vegetables from "./pages/vegetables/Vegetables";
 import Recipes from "./pages/recipes/Recipes";
+import Subscriptions from "./pages/subscription/Subscriptions";
 import Login from "./pages/Auth/Login";
 import Footer from "./shared/components/Navigation/Footer";
 import { AuthContext } from "./shared/context/auth-context";
@@ -68,6 +69,9 @@ const App = () => {
         </Route>
         <Route path="/recipes">
           <Recipes />
+        </Route>
+        <Route path="/subscription">
+          <Subscriptions/>
         </Route>
       </Switch>
     );
